@@ -1,0 +1,290 @@
+/* General body styling */
+body {
+  font-family: Helvetica;
+  max-width: 1075px;
+  margin: auto;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 1041px) {
+  body {
+    max-width: 500px;
+  }
+
+  .blog-post-content {
+    padding: 12px;
+  }
+
+  .blog-post-row {
+    flex-wrap: wrap;
+  }
+}
+
+/* Main container styling */
+#content {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 0 auto; /* Center content */
+  padding: 20px; /* Padding for spacing around content */
+}
+
+/* Styling for the intro line */
+#intro {
+  text-align: left;
+  margin-bottom: 20px; /* Adds space after the intro paragraph */
+  padding: 10px 0;
+}
+
+/* Header styling for 'About Me' */
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px; /* Add space below the heading */
+}
+
+/* Styling for subheaders like 'My Mission' */
+h3 {
+  font-weight: bold;
+  margin-top: 40px; /* Add more space above the subheading */
+  margin-bottom: 20px; /* Space below the subheading */
+}
+
+/* Paragraph styling */
+p {
+  font-size: 1.125em;
+  line-height: 1.6;
+  margin-bottom: 20px; /* Space between paragraphs */
+}
+
+/* Link styling */
+a {
+  text-decoration: none;
+  color: #008fd5;
+}
+
+/* Hover effect for links */
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Header navigation menu styling */
+#header {
+  height: 48px;
+  width: 100%;
+  border-bottom: 1px solid #aaaaaa;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 20px; /* Adds padding on the left */
+}
+
+/* Navigation items in the header */
+.nav-item {
+  line-height: 48px;
+  margin-right: 16px;
+  font-size: 16px;
+}
+
+.nav-item a {
+  color: black; /* Change navigation links to black */
+  text-decoration: none;
+}
+
+/* Hover effect for navigation links */
+.nav-item a:hover {
+  color: #008fd5; /* Optional: change color on hover to blue */
+}
+
+/* Selected nav item styling */
+.selected a {
+  font-weight: bold;
+  color: black; /* Keep the selected item bold and black */
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  margin-top: 40px; /* Space above the footer */
+}
+
+footer p {
+  font-size: 1em;
+  color: #333;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  #content {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2em; /* Slightly reduce font size on smaller screens */
+  }
+
+  p {
+    font-size: 1em; /* Adjust font size on smaller screens */
+  }
+}
+
+/* General paragraph styling for consistent spacing */
+p {
+  font-size: 1.125em;
+  line-height: 1.6;
+  margin-bottom: 20px; /* Ensure paragraphs also have consistent space */
+}
+
+/* Apply the same spacing globally for all sections */
+.section-wrapper {
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+/* General layout for blog post row */
+.blog-post-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Align the image and text at the top */
+  margin-bottom: 40px; /* Add space between blog posts */
+}
+
+/* Styling for the image thumbnail */
+.thumbnail img {
+  width: 250px; /* Set a fixed width for the thumbnail */
+  height: auto; /* Maintain the aspect ratio */
+  object-fit: cover; /* Ensure the image doesn't get distorted */
+  margin-right: 20px; /* Space between the image and text */
+}
+
+/* Styling for the blog text section */
+.blog-text {
+  max-width: 600px; /* Control the width of the text block */
+}
+
+/* Blog post title */
+.blog-post-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black; /* Ensure blog post title is black */
+}
+
+/* Blog post description */
+.blog-post-preview {
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Horizontal rule for separating posts */
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #ddd;
+  margin: 40px 0;
+}
+
+/* Blog post title */
+.blog-post-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black; /* Ensure blog post title is black */
+}
+
+/* Link styling for blog post title */
+.blog-post-title a {
+  color: black; /* Ensure the blog post title links are black */
+  text-decoration: none;
+}
+
+/* Hover effect for blog post title */
+.blog-post-title a:hover {
+  color: #008fd5; /* Optional: change color on hover to blue */
+}
+
+/* General layout for blog post row */
+.blog-post-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Align the image and text at the top */
+  margin-bottom: 40px; /* Add space between blog posts */
+}
+
+.thumbnail img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .blog-post-row {
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center content */
+  }
+
+  .thumbnail img {
+    margin-right: 0;
+    margin-bottom: 20px; /* Add space below the image when centered */
+  }
+  
+  .blog-text {
+    text-align: center; /* Center text when the screen is small */
+  }
+}
+
+/* General layout for project post row */
+.project-post-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Align the image and text at the top */
+  margin-bottom: 40px; /* Add space between project posts */
+  border-bottom: 1px solid #eaeaea; /* Add a line between projects */
+  padding-bottom: 20px;
+}
+
+/* Styling for the project image thumbnail */
+.thumbnail img {
+  width: 250px; /* Set a fixed width for the thumbnail */
+  height: auto; /* Maintain the aspect ratio */
+  object-fit: cover; /* Ensure the image doesn't get distorted */
+  margin-right: 20px; /* Space between the image and text */
+}
+
+/* Styling for the project text section */
+.project-text {
+  max-width: 600px; /* Control the width of the text block */
+}
+
+/* Project post title */
+.project-post-row h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black; /* Ensure project titles are black */
+}
+
+/* Project post description */
+.project-post-row p {
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: #555;
+}
+
+@media screen and (max-width: 1200px) {
+  .project-post-row {
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center content */
+  }
+
+  .thumbnail img {
+    margin-right: 0;
+    margin-bottom: 20px; /* Add space below the image when centered */
+  }
+  
+  .project-text {
+    text-align: center; /* Center text when the screen is small */
+  }
+}
