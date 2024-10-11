@@ -273,6 +273,17 @@ hr {
   color: #555;
 }
 
+/* Link styling for project titles */
+.project-post-row h2 a {
+  color: black; /* Ensure project titles stay black */
+  text-decoration: none; /* Remove underline from project titles */
+}
+
+/* Hover effect for project post title */
+.project-post-row h2 a:hover {
+  color: #008fd5; /* Change to blue on hover */
+}
+
 @media screen and (max-width: 1200px) {
   .project-post-row {
     flex-direction: column; /* Stack image and text vertically */

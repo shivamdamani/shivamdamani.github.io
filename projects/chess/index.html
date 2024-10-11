@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chess Game Analysis - Shivam Damani</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <header>
+      <div id="header">
+        <span class="nav-item"><a href="/">About Me</a></span>
+        <span class="nav-item selected"><a href="/projects">Projects</a></span>
+        <span class="nav-item"><a href="../../blog">Blog</a></span>
+        <span class="nav-item"><a href="../../contact">Contact</a></span>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div id="content">
+      <h1>Chess Game Analysis</h1>
+
+      <p>
+        Chess is a game of strategy, tactics, and calculation. In this project, I used data from
+        <a href="https://lichess.org/" target="_blank">Lichess</a>, an online chess platform, to analyze games, explore patterns,
+        and visualize strategies used by players.
+      </p>
+
+      <h3>Objective</h3>
+      <p>
+        The goal of this project is to analyze a collection of chess games, extract meaningful insights from the
+        players' moves, and visualize key strategies. By analyzing the data, I aim to better understand player
+        strengths and weaknesses and how they change based on the opening moves, mid-game, and end-game strategies.
+      </p>
+
+      <h3>Tools Used</h3>
+      <ul>
+        <li>Python</li>
+        <li>Pandas for data manipulation</li>
+        <li>Matplotlib for visualizations</li>
+        <li>Stockfish, an open-source chess engine, for move analysis</li>
+      </ul>
+
+      <h3>Data and Analysis</h3>
+      <p>
+        The data for this project includes thousands of chess games from Lichess, which were analyzed for move patterns,
+        player ratings, game outcomes, and strategies. Below are a few highlights from the analysis:
+      </p>
+
+      <ul>
+        <li>
+          <strong>Opening Moves:</strong> The data shows that players with higher Elo ratings tend to prefer classical openings
+          like the Ruy Lopez, while lower-rated players tend to experiment more with non-standard openings.
+        </li>
+        <li>
+          <strong>Mid-Game Tactics:</strong> Tactics such as forks, pins, and discovered attacks were identified using Stockfish
+          evaluations and move patterns.
+        </li>
+        <li>
+          <strong>Endgame Strategies:</strong> High-rated players tend to win a higher percentage of their games in the endgame
+          through accurate pawn promotion strategies.
+        </li>
+      </ul>
+
+      <h3>Visualizations</h3>
+      <p>
+        The following chart visualizes player ratings against their win rates, showing that higher-rated players
+        tend to win more often in shorter games:
+      </p>
+      <img src="../../assets/chess-visualization.png" alt="Chess Analysis Visualization" />
+
+      <h3>Conclusion</h3>
+      <p>
+        This project provided valuable insights into chess strategies across different rating levels. By combining
+        data analysis and chess engine evaluations, we can better understand the tactics and strategies used by
+        players in different phases of the game.
+      </p>
+
+      <p>For more details or to explore the full analysis, feel free to check out the project on GitHub!</p>
+
+      <!-- Footer -->
+      <footer>
+        <p>Have feedback? I'd love to hear from you - <a href="mailto:shivamdamani11@gmail.com">shivamdamani11@gmail.com</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
