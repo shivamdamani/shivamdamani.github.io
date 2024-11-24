@@ -299,3 +299,19 @@ hr {
     text-align: center; /* Center text when the screen is small */
   }
 }
+
+.blog-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+.blog-figure {
+  text-align: center;
+  margin: 20px 0;
+}
+.blog-caption {
+  font-size: 0.9em;
+  color: #555;
+}
