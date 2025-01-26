@@ -315,3 +315,15 @@ hr {
   font-size: 0.9em;
   color: #555;
 }
+
+.strava-embed-placeholder {
+  display: block; /* Ensure it's treated as a block-level element */
+  margin: 0 auto; /* Horizontally center */
+  max-width: 100%; /* Ensure it scales to fit the parent container */
+  text-align: center; /* Align the internal content */
+}
+
+iframe {
+  display: block; /* Treat iframe as a block element */
+  margin: 0 auto; /* Center the iframe itself */
+}
